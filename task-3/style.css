@@ -1,0 +1,531 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background: #15598a;
+  color: white;
+  padding: 20px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.logo img {
+  height: 50px;
+  width: auto;
+}
+
+nav {
+  display: flex;
+  gap: 15px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #00f0ff;
+}
+
+.cta-button {
+  background: #00f0ff;
+  color: #15598a;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.cta-button:hover{ 
+  color:#fff;
+}
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: white;
+}
+
+/* Hero Section */
+.hero {
+  background: url('images/h.jpg') no-repeat center center/cover;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  opacity: 0.7;
+}
+
+.hero h1 {
+  font-size: 3rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  max-width: 600px;
+}
+
+/* About Us Section */
+.about-section {
+  padding: 60px 20px;
+  background-color: #f5f5f5;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  max-width: 1200px;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+.about-text {
+  flex: 1;
+}
+
+.about-text h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  color: #15598a;
+}
+
+.about-text p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.about-text h3 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #15598a;
+}
+.about-text ul {
+  list-style-type: disc;
+  list-style-position: inside;
+  padding-left: 0;            
+  margin-left: 0;
+  font-size: 18px;
+  color: #444;
+}
+
+.about-text ul li {
+  padding-left: 0;
+  margin-left: 0;
+}
+.about-text ul {
+  list-style-type: disc;
+  list-style-position: outside;
+  padding-left: 20px;
+  margin-left: 0;
+  font-size: 18px;
+  color: #444;
+}
+
+.about-text ul li {
+  margin-left: 0;
+  padding-left: 0;
+  line-height: 1.6;
+}
+
+.about-image {
+  flex: 1;
+  text-align: center;
+}
+
+.about-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Cards Section */
+.section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  flex: 1 1 250px;
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  min-height: 370px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05); 
+  box-shadow: 0 10px 20px rgba(0, 255, 255, 0.3), 0 6px 10px rgba(21, 89, 138, 0.5);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  max-height: 150px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+  background: #15598a;
+  color: white;
+  padding: 40px 20px 20px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+  gap: 30px;
+}
+
+.footer-col {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-col h4 {
+  margin-bottom: 15px;
+  font-size: 18px;
+  border-bottom: 2px solid #00f0ff;
+  display: inline-block;
+}
+
+.footer-col ul {
+  list-style: none;
+}
+
+.footer-col ul li {
+  margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-col ul li a:hover {
+  color: #00f0ff;
+}
+
+footer p {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+}
+/* About Page Styles */
+.about-container.about-page {
+  background-color: #fafafa;
+  padding: 40px;
+  border-radius: 10px;
+}
+.about-container.about-page .about-text h2 {
+  color: #007BFF;
+}
+.about-container.about-page .about-image img {
+  border-radius: 15px;
+  border: 3px solid #007BFF;
+  box-shadow: rgba(110, 194, 197, 0.25) 0px 50px 100px -20px, rgba(82, 180, 172, 0.3) 0px 30px 60px -30px;
+}
+
+/* Services Page Styles */
+.services-container.services-page .cards {
+   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.services-container.services-page h1{
+  text-align: center;
+  margin: 13px;
+}
+.services-container.services-page .card {
+  background-color: #ffffff;
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0px 8px 18px rgba(21, 89, 138, 0.15);
+}
+.services-container.services-page .card h4 {
+  color: #15598a;
+  text-align: center;
+}
+.services-container.services-page .card .cta-button {
+  background-color: #00f0ff;
+  color: #15598a;
+  font-weight: bold;
+  padding: 12px 25px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+ display: block;
+  margin: 15px auto 0;
+
+  text-align: center;
+}
+
+.services-container.services-page .card .cta-button:hover {
+  background-color: #15598a;
+  color: #ffffff;
+}
+
+
+.services-container.services-page .card .cta-button:hover {
+  background-color: #15598a;
+  color: #fff;
+}
+
+.services-container.services-page .card .cta-button:hover {
+  background-color: #15598a;
+  color: #fff;
+}
+/* CTA BUTTON Styles for both <a> and <button> */
+.cta-button {
+  background-color: #00f0ff;
+  color: #15598a;
+  font-weight: bold;
+  padding: 12px 25px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #15598a;
+  color: #ffffff;
+}
+/* Responsive Media Queries */
+@media(max-width: 768px) {
+  nav {
+    display: none;
+    flex-direction: column;
+    background-color: rgba(21, 89, 138, 0.95);
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    padding: 40px 20px;
+    text-align: center;
+    z-index: 1000;
+    border-radius: 0 0 10px 10px;
+  }
+
+  nav.show {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-text h2 {
+    font-size: 32px;
+  }
+
+  .about-text p,
+  .about-text ul {
+    font-size: 16px;
+  }
+
+  .about-text h3 {
+    font-size: 24px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+@media (max-width: 480px) {
+  .about-text h2 {
+    font-size: 24px;
+  }
+
+  .about-text h3 {
+    font-size: 20px;
+  }
+
+  .about-text p,
+  .about-text ul {
+    font-size: 14px;
+  }
+
+  .about-text ul {
+    padding-left: 0;
+    list-style-position: inside;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+  
+}
+
+/*
+   Services Page Responsive Styles*/
+
+/* 
+   Mobile Styles (max 480px)  */
+@media (max-width: 480px) {
+  .cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .services-container.services-page .card {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  .services-container.services-page .card h4 {
+    font-size: 1rem;
+  }
+
+  .services-container.services-page .card p {
+    font-size: 0.9rem;
+  }
+
+  .services-container.services-page .card .cta-button {
+    font-size: 0.9rem;
+    padding: 10px 18px;
+  }
+}
+
+/*
+   Tablet Styles (481px–768px)  */
+@media (min-width: 481px) and (max-width: 768px) {
+  .cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .services-container.services-page .card {
+    flex: 1 1 90%; 
+    max-width: 90%; 
+  }
+
+  .services-container.services-page .card h4 {
+    font-size: 1.25rem;
+  }
+
+  .services-container.services-page .card p {
+    font-size: 1rem;
+  }
+
+  .services-container.services-page .card .cta-button {
+    font-size: 1rem;
+    padding: 12px 22px;
+  }
+}
+
+/*
+   Small Laptop Styles (769px–1024px) 
+ */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .cards {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 25px;
+  }
+
+  .services-container.services-page .card {
+    flex: 1 1 45%; 
+    max-width: 45%; 
+  }
+
+  .services-container.services-page .card h4 {
+    font-size: 1.25rem;
+  }
+
+  .services-container.services-page .card p {
+    font-size: 1rem;
+  }
+
+  .services-container.services-page .card .cta-button {
+    font-size: 1rem;
+    padding: 12px 25px;
+  }
+}
+
+/*
+   Desktop Styles (1025px and up) 
+ */
+@media (min-width: 1025px) {
+  .cards {
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 30px;
+  }
+
+  .services-container.services-page .card {
+    flex: 1 1 30%; 
+    max-width: 30%; 
+  }
+
+  .services-container.services-page .card h4 {
+    font-size: 1.5rem;
+  }
+
+  .services-container.services-page .card p {
+    font-size: 1rem;
+  }
+
+  .services-container.services-page .card .cta-button {
+    font-size: 1rem;
+    padding: 12px 25px;
+  }
+}
