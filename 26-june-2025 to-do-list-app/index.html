@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>To‑Do Dashboard</title>
+<link rel="stylesheet" href="syle.css">
+</head>
+<body>
+<div class="dashboard-container">
+  <aside class="sidebar">
+    <h2 class="logo">📝 ToDoApp</h2>
+    <nav>
+      <ul>
+        <li><a href="#home">🏠 Home</a></li>
+        <li><a href="#tasks">📋 Tasks</a></li>
+        <li><a href="#profile">👤 Profile</a></li>
+        <li><a href="#settings">⚙️ Settings</a></li>
+      </ul>
+    </nav>
+    <button class="toggle-mode"onclick="toggleDarkMode()">🌙 Dark Mode</button>
+  </aside>
+
+  <main class="main">
+    <header>Welcome to the Dashboard</header>
+    <section id="home" class="section">
+      <h1>Dashboard</h1>
+      <p>Here you can manage your tasks and track your progress!</p>
+    </section>
+    <section id="tasks" class="section">
+      <h2>Your Tasks</h2>
+      <div class="cards">
+        <div class="card" id="total-tasks"><h3>Total Tasks</h3><p>0</p></div>
+        <div class="card" id="completed-tasks"><h3>Completed</h3><p>0</p></div>
+        <div class="card" id="pending-tasks"><h3>Pending</h3><p>0</p></div>
+      </div>
+      <!-- Integrated To‑Do List App -->
+      <div class="app">
+        <h1>To‑Do List</h1>
+        <div class="input-area">
+          <input type="text" placeholder="Enter new task...">
+          <button>Add</button>
+        </div>
+        <div class="filter-area">
+          <button class="active">All</button>
+          <button>Active</button>
+          <button>Completed</button>
+        </div>
+        <ul class="task-list"></ul>
+        <div class="stats">✅ Completed: <span class="count">0</span> | ⏳ Pending: <span class="count">0</span></div>
+      </div>
+    </section>
+    <footer>© All Rights Reserved 2025</footer>
+  </main>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,228 @@
+
+/* GENERAL PAGE STYLING */
+html, body {
+  height: 100%; 
+}
+body {
+  font-family: Arial, sans-serif;
+  background: repeating-radial-gradient(#887bb0, #887bb0 20px, #a497c4 20px, #a497c4 40px);
+  margin: 0;
+  padding: 0;
+}
+
+.dashboard-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* SIDEBAR */
+.sidebar {
+  width: 250px;
+  background: #3a3361;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+.sidebar .logo {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+.sidebar nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.sidebar nav ul li {
+  margin: 15px 0;
+}
+.sidebar nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  display: block;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+.sidebar nav ul li a:hover {
+  background: #2c274c;
+}
+.toggle-mode {
+  margin-top: auto;
+  padding: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+/* MAIN */
+.main {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.main header {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 20px 0;
+}
+.section {
+  flex: 1;
+}
+.section h1,p {
+  text-align: center;
+}
+/* CARDS */
+.cards {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+.card {
+  background: #ffffffdd;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  flex: 1;
+  margin: 0 10px;
+  border-right: 15px solid #70339c !important;
+}
+.card:last-child {
+  border-right: none;
+}
+
+/* TO‑DO LIST APP STYLES */
+.app {
+  background: #ffffffdd;
+  border-radius: 16px;
+  padding: 20px;
+  backdrop-filter: blur(12px);
+  box-shadow: 0px 4px 30px rgba(0,0,0,.1);
+}
+.app h1 {
+  text-align: center;
+  color: #3a3361;
+}
+.input-area {
+  display: flex;
+  margin-bottom: 20px;
+}
+.input-area input {
+  flex: 1;
+  padding: 12px;
+  font-size: 1rem;
+  border-radius: 12px 0 0 12px;
+  border: none;
+  outline: none;
+}
+.input-area button {
+  padding: 12px 18px;
+  font-size: 1rem;
+  border-radius: 0 12px 12px 0;
+  border: none;
+  background: #3a3361;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+}
+.input-area button:hover {
+  background: #2c274c;
+}
+
+.filter-area {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+.filter-area button {
+  background: none;
+  border: none;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 8px 16px;
+  cursor: pointer;
+  color: #3a3361;
+  position: relative;
+}
+.filter-area button::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%) scaleX(0);
+  transform-origin: center;
+  height: 3px;
+  width: 80%;
+  background: #3a3361;
+  border-radius: 2px;
+  transition: transform .3s;
+}
+.filter-area button:hover::after,
+.filter-area button.active::after {
+  transform: translateX(-50%) scaleX(1);
+}
+.filter-area button.active {
+  color: #2c274c;
+}
+
+.task-list {
+  list-style: none;
+  padding: 0;
+}
+.task-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  border-radius: 12px;
+  margin-bottom: 15px;
+  background: #ffffffdd;
+  box-shadow: 0px 2px 8px rgba(0,0,0,.1);
+  opacity: 0;
+  transform: translateY(-10px);
+  animation: fadeIn .3s ease forwards;
+}
+.task-list li.completed {
+  text-decoration: line-through;
+  color: #777;
+}
+.task-list li:hover {
+  background: linear-gradient(90deg, #e2dff3, #cbc1ec);
+}
+.task-list .delete {
+  background: crimson;
+  color: #fff;
+  border-radius: 3px;
+  border: none;
+  padding: 3px 8px;
+  cursor: pointer;
+}
+.task-list .delete:hover {
+  background: #a50028;
+}
+
+.stats {
+  text-align: center;
+  font-size: 14px;
+  margin: 15px 0;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 10px;
+  font-size: 14px;
+  margin: 20px 10px 10px 10px;
+  background: #3a3361;
+  color: #fff;
+  border-radius: 8px;
+}
