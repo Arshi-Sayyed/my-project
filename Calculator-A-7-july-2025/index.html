@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>Calculator</title>
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" />
+   <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+   <div class="calculator-wrapper d-flex flex-column align-items-center justify-content-center" style="min-height: 100vh;">
+      <h1 class="text-white text-center mb-4">Calculator</h1>
+
+   <section class="main-container">
+      <div class="upper-container">
+         <div id="input-div"></div>
+         <div id="output-div">0</div>
+      </div>
+      <div class="lower-container">
+         <div class="row-container">
+            <button onclick="clearAll()" class="custom-btn">C</button>
+            <button onclick="removeValue()" class="custom-btn">Del</button>
+            <button onclick="addTextToScreen('%')" class="custom-btn">%</button>
+            <button onclick="addTextToScreen('+')" class="custom-btn btn-right">+</button>
+         </div>
+         <div class="row-container">
+            <button onclick="addTextToScreen(1)" class="custom-btn">1</button>
+            <button onclick="addTextToScreen(2)" class="custom-btn">2</button>
+            <button onclick="addTextToScreen(3)" class="custom-btn">3</button>
+            <button onclick="addTextToScreen('-')" class="custom-btn btn-right">-</button>
+         </div>
+         <div class="row-container">
+            <button onclick="addTextToScreen(4)" class="custom-btn">4</button>
+            <button onclick="addTextToScreen(5)" class="custom-btn">5</button>
+            <button onclick="addTextToScreen(6)" class="custom-btn">6</button>
+            <button onclick="addTextToScreen('*')" class="custom-btn btn-right">×</button>
+         </div>
+         <div class="row-container">
+            <button onclick="addTextToScreen(7)" class="custom-btn">7</button>
+            <button onclick="addTextToScreen(8)" class="custom-btn">8</button>
+            <button onclick="addTextToScreen(9)" class="custom-btn">9</button>
+            <button onclick="addTextToScreen('/')" class="custom-btn btn-right">÷</button>
+         </div>
+         <div class="row-container">
+            <button onclick="addTextToScreen('.')" class="custom-btn">.</button>
+            <button onclick="addTextToScreen(0)" class="custom-btn">0</button>
+            <button onclick="addTextToScreen('00')" class="custom-btn">00</button>
+            <button onclick="answer()" class="custom-btn btn-right btn-equalsto">=</button>
+         </div>
+      </div>
+   </section>
+   <script src="script.js"></script>
+</body>
+</html>
