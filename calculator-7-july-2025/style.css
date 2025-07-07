@@ -1,0 +1,63 @@
+:root{
+   --background-color: #000807;
+   --small-text:#2AB5AB;
+   --button-background-color:#0d4649;
+   --button-dark-background-color:#040e0f;
+   --button-equalsto-background-color:#26a094;
+   --input-text-color:#2EC4B6;
+}
+*{
+   box-sizing: border-box;
+   margin:0;
+   padding:0;
+
+}
+.main-container{
+   display: flex;
+   flex-direction: column;
+   background-color: var(--background-color);
+   height:100vh;
+   justify-content:space-around;
+   align-items: flex-end;
+
+}
+/* row container */
+.row-container{
+   width:100vw;
+   display: flex;
+   justify-content: space-around;
+}
+/* button */
+.custom-btn{
+background-color: var(--button-dark-background-color);
+color:#fff;
+width:100%;
+border:1px solid var(--background-color);
+height: 80px;
+font-size: 25px;
+font-weight: bold;
+
+}
+.btn-right{
+   background-color: var(--button-background-color);
+}
+.btn-equalsto{
+   background-color: var(--button-equalsto-background-color);
+}
+/* upper-container */
+.upper-container{
+   margin: 2px 15px 2px;
+}
+#output-div{
+   color:#fff;
+   font-size: 55px;
+   text-align: right;
+   margin: 2px 15px 2px;
+}
+/* input-div */
+#input-div{
+color:var(--input-text-color);
+text-align: right;
+font-size:25px;
+margin: 2px 15px 2px;
+}
